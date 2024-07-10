@@ -53,7 +53,7 @@ export default defineEventHandler(async (event) => {
         max_tokens: 1024,
         stream: true,
         system: prompts.system,
-        temperature: 0.7
+        temperature: 0.65
     });
 
     const response = await fetch("https://api.anthropic.com/v1/messages", {
