@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+Disallow: /platform
+Disallow: /whiteboard
