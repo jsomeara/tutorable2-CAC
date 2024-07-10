@@ -89,6 +89,39 @@ function removeImageBlanks(URI) {
     });
 }
 
+function filterMessages(messages) {
+    const imageParts = [];
+  
+    // First pass: collect all image parts
+    messages.forEach(message => {
+      if (message.role === 'user') {
+        message.parts.forEach(part => {
+          if (part.inline_data && part.inline_data.mime_type === 'image/webp') {
+            imageParts.push(part);
+          }
+        });
+      }
+    });
+  
+    // Keep only the last 3 images
+    const lastThreeImages = imageParts.slice(-3);
+  
+    // Second pass: filter the messages
+    return messages.map(message => {
+      if (message.role === 'user') {
+        const filteredParts = message.parts.filter(part => {
+          if (part.inline_data && part.inline_data.mime_type === 'image/webp') {
+            return lastThreeImages.includes(part);
+          }
+          return true;
+        });
+  
+        return { ...message, parts: filteredParts };
+      }
+      return message;
+    });
+  }
+
 const sendMessage = async (textMessage, whiteboardContents, setResponseCallback) => {
     window.debugSeeMessages = () => messages.value;
     const changeInWhiteboardContents = whiteboardContents !== lastWhiteboardContents.value
@@ -126,7 +159,7 @@ const sendMessage = async (textMessage, whiteboardContents, setResponseCallback)
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                contents: messages.value
+                contents: filterMessages(messages.value)
             })
         })
 
