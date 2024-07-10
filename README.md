@@ -1,5 +1,8 @@
 ![Tutorable Logo](./assets/images/logo.svg?raw=true)
 
+[Website](https://tutorable.org/)
+[⭐ Video Demo](https://youtu.be/kxj85My7x6Y)
+
 ## .env file
 - Don't forget to setup `.env` file.
 - See `.env.example` for details
