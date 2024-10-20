@@ -4,6 +4,8 @@
 
 [⭐ Video Demo](https://youtu.be/kxj85My7x6Y)
 
+***Built for 2024 Congressional App Challenge (WA-09, Representative Adam Smith)***
+
 ## .env file
 - Don't forget to setup `.env` file.
 - See `.env.example` for details
