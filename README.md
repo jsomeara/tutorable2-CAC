@@ -1,5 +1,5 @@
 <img src="./assets/images/logo.svg?raw=true#gh-light-mode-only" width="600" alt="Tutorable Logo"/>
-<img src="./assets/images/logo.svg?raw=true#gh-dark-mode-only" width="600" alt="Tutorable Logo"/>
+<img src="./assets/images/logo-dark.svg?raw=true#gh-dark-mode-only" width="600" alt="Tutorable Logo"/>
 
 [Website](https://tutorable.org/)
 
