@@ -3,7 +3,7 @@
 <img src="./assets/images/logo-dark.svg?raw=true#gh-dark-mode-only" width="600" alt="Tutorable Logo"/>
   <p align="center">
     <a href="https://tutorable.org/" target="_blank">🌐 Live Demo</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://youtu.be/kxj85My7x6Y" target="_blank">🎞️ Video Demo</a>
+    <a href="https://www.youtube.com/watch?v=gvoLHmavgx4" target="_blank">🎞️ Video Demo</a>
   </p>
   <p align="center">
     <b>Built for 2024 Congressional App Challenge (WA-09, Representative Adam Smith)</b>
